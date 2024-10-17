@@ -1,0 +1,59 @@
+.attribute-score{    
+    border: solid 2px black;
+    border-radius: 14px;
+    padding: 0.2em;
+}
+
+.traitbox{
+    max-width: 6em;
+    height: auto;
+    margin: 0.2em;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 14px;
+}
+.traitbox-title{
+    padding: 0.2em;
+    font-size: medium;
+    margin: 0%;
+}
+.traitbox-popcontainer{
+    display: none;
+    position: absolute;
+    margin: 0%;
+    padding: 0.2em;
+    border-radius: 14px;
+    border: solid 2px grey;
+    z-index: 1;
+    background-color: rgb(31, 31, 31);
+    font-size: medium;
+}
+.traitbox:hover .traitbox-popcontainer{
+    display: block;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+  }
+
+#Mind{
+    background-color: #3887e2;
+}
+#Body{
+    background-color: #d84532;
+}
+#Agility{
+    background-color: #12ab2c;
+}
+#Mystic{
+    background-color: #a5509f;
+}
+#Presence{
+    background-color: #d9e949;
+}
+#Positive{
+    background-color: #3a7e37;
+}
+#Negative{
+    background-color: #813333;
+}
