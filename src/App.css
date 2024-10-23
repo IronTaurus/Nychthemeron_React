@@ -2,37 +2,46 @@
   text-align: center;
 }
 
-.App-header {
+.main-grid{
   background-color: #2c3037;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.main-grid{
   display: grid;
-  grid-template-rows: 5vh 90vh 5vh;
+  justify-items: stretch;
+  grid-template-rows: 6vh 94vh;
+  justify-content: center;
 }
 #top-grid{
   top: 0%;
+  width: 100%;
+  position: fixed;
+  padding: 0.3em;
+  background-color: #262e3d;
 }
 #mid-grid{
+  height: 94vh;
+  margin-top: 6vh;
   overflow-y: scroll;
 }
-#bot-grid{
-  bottom: 0%;
+#mid-grid::-webkit-scrollbar{
+  width: 0.3em;
 }
+#mid-grid::-webkit-scrollbar-thumb {
+  background-color: rgb(73, 74, 80);   /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px;  /* creates padding around scroll thumb */
+}
+#mid-grid::-webkit-scrollbar-track{
+  background: none; 
+}
+
 
 .item-block{
   margin: 1em;
 }
 .text-block{
   font-size: medium;
-  width: 80vh;
+  width: 100vh;
 }
 .title-block{
   margin: 0.5em;
@@ -50,7 +59,20 @@
   height: 14em;
   width: auto;
 }
+.left{
+  left:0%
+}
+.right{
+  right:0%
+}
 .race-grid{
   display: flex;
+}
+.even-is-true{
+  flex-direction: row-reverse;
+}
+.even-is-false{
+  flex-direction: row;
+  
 }
 

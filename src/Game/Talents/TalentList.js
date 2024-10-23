@@ -1080,4 +1080,5 @@ const TalentList = [
     },
     //#endregion Basic
   ];
+  
   export default TalentList;   

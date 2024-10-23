@@ -5,7 +5,7 @@
 }
 
 .traitbox{
-    max-width: 6em;
+    position: relative;
     height: auto;
     margin: 0.2em;
     border: solid 2px rgb(0, 0, 0);
@@ -17,7 +17,10 @@
     margin: 0%;
 }
 .traitbox-popcontainer{
-    display: none;
+    max-width: 20em;
+    width: 14em;
+    display: block;
+    visibility: hidden;
     position: absolute;
     margin: 0%;
     padding: 0.2em;
@@ -28,7 +31,7 @@
     font-size: medium;
 }
 .traitbox:hover .traitbox-popcontainer{
-    display: block;
+    visibility: visible;
 }
 
 .flex-container{
@@ -36,24 +39,24 @@
     justify-content: center;
   }
 
-#Mind{
+.Mind{
     background-color: #3887e2;
 }
-#Body{
+.Body{
     background-color: #d84532;
 }
-#Agility{
+.Agility{
     background-color: #12ab2c;
 }
-#Mystic{
+.Mystic{
     background-color: #a5509f;
 }
-#Presence{
+.Presence{
     background-color: #d9e949;
 }
-#Positive{
+.Positive{
     background-color: #3a7e37;
 }
-#Negative{
+.Negative{
     background-color: #813333;
 }

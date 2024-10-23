@@ -1,6 +1,6 @@
 const RaceList = [
     {id:"Dwarf_M",
-    Title: "Mountain Dwarf", SubTitle: "(Fjelka Dvergner)", Attributes: [{Type: "Body", Value: 2}, {Type: "Agility", Value: 1}], 
+    Title:"Mountain Dwarf", SubTitle: "(Fjelka Dvergner)", Attributes: [{Type: "Body", Value: 2}, {Type: "Agility", Value: 1}], 
     Traits: ["DwaKno", "NigVis1", "TouSki", "ShoLeg"], Talents: ["OrcStr1", "Carrier1", "Resilient1", "DisTra1", "LocPic1"], 
     Background: "Mountain dwarves or Fjelka Dvergner are one of the branches of dwarves that exists in Mihridahl, the Mountain dwarves" +
     "are the more common dwarf you think of when speaking about dwarves. They reside in caves near mountains and build large cities inside them."+
@@ -19,7 +19,7 @@ const RaceList = [
     Age: "400 years"
     },
     {id:"Elf_H",
-    Title: "High Elf", SubTitle: null, Attributes: [{Type: "Presence", Value: 2}, {Type: "Mind", Value: 1}], 
+    Title:"High Elf", SubTitle: null, Attributes: [{Type: "Presence", Value: 2}, {Type: "Mind", Value: 1}], 
     Traits: ["ElvKno", "DayVis1", "MedMem", "IroAll"], Talents: ["QuiRea1", "QuiRea2"], 
     Background: "Elves perceive time differently than other races, this is mainly due to their long life span. Similar to how some people won’t "+
     "notice or rather forget when they do some everyday chores an elf will feel the same about the years that pass. This can result in elves being "+
@@ -44,7 +44,7 @@ const RaceList = [
     Age: "1200 years"
     },
     {id:"Elf_W",
-        Title: "Wood Elf", SubTitle: null, Attributes: [{Type: "Agility", Value: 2}, {Type: "Mind", Value: 1}], 
+        Title:"Wood Elf", SubTitle: null, Attributes: [{Type: "Agility", Value: 2}, {Type: "Mind", Value: 1}], 
         Traits: ["ElvKno", "DayVis1", "MedMem", "IroAll"], Talents: ["QuiRea1", "QuiRea2"], 
         Background: "Elves perceive time differently than other races, this is mainly due to their long life span. Similar to how some people won’t "+
         "notice or rather forget when they do some everyday chores an elf will feel the same about the years that pass. This can result in elves being "+
@@ -67,7 +67,7 @@ const RaceList = [
         Age: "1800 years"
     },
     {id:"Elf_D",
-        Title: "Dark Elf", SubTitle: null, Attributes: [{Type: "Agility", Value: 2}, {Type: "Presence", Value: 1}], 
+        Title:"Dark Elf", SubTitle: null, Attributes: [{Type: "Agility", Value: 2}, {Type: "Presence", Value: 1}], 
         Traits: ["ElvKno", "NigVis1", "MedMem", "IroAll"], Talents: ["QuiRea1", "QuiRea2"], 
         Background: "Elves perceive time differently than other races, this is mainly due to their long life span. Similar to how some people won’t "+
         "notice or rather forget when they do some everyday chores an elf will feel the same about the years that pass. This can result in elves being "+

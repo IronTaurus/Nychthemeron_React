@@ -1,15 +1,18 @@
-import GetSingleTalent from '../Talents/Talents';
+import GetSingleTalent from '../Game/Talents/GetTalents';
 import GetTrait from './Traits'
 import RaceList from './RaceList';
 import PropTypes from 'prop-types';
 
 const rId = ["Dwarf_M", "Elf_D", "Elf_H", "Elf_W"] 
 
-function GetRace({raceId}) {
+function GetRace({raceId, isEven}) {
     const TargetRace = RaceList.find((race) => race.id === raceId);
     return (
       <>
-      <div className='race-grid'>
+      <div className={`race-grid even-is-${isEven}`}>
+        <div className={`race-portrait right`}>
+                    <img className='race-portrait' src={require(`../Art/RacePortraits/${TargetRace.id}.png`)}/>
+                </div>
         <div className='race-info'>
             <div className='title-block'>
                 <h3 className='main-title'>{TargetRace.Title}</h3>
@@ -17,13 +20,13 @@ function GetRace({raceId}) {
             </div>
             <div className='item-block'>
                 <div className="flex-container">
-                    {TargetRace.Attributes.map(attribute => <div class="attribute-score" id={attribute.Type}>{attribute.Type} {attribute.Value}</div>)}
+                    {TargetRace.Attributes.map((attribute, index) => <div key={index} className={`attribute-score ${attribute.Type}`}>{attribute.Type} {attribute.Value}</div>)}
                 </div>
                 <div className="flex-container">
-                    {TargetRace.Traits.map(trait => <GetTrait id={trait}/>)}
+                    {TargetRace.Traits.map((trait, index) => <GetTrait key={index} tId={trait}/>)}
                 </div>
                 <div className="flex-container">
-                    {TargetRace.Talents.map(talent => <GetSingleTalent id={talent}/>)}
+                    {TargetRace.Talents.map((talent, index) => <GetSingleTalent key={index} tId={talent}/>)}
                 </div>
             </div>
             
@@ -40,9 +43,6 @@ function GetRace({raceId}) {
                 <p>{TargetRace.Behaviour}</p>
             </div>
         </div>
-        <div className='race-portrait'>
-            {/* <img className='race-portrait' src={require(`../Art/RacePortraits/${TargetRace.ID}.png`)}/> */}
-        </div>
       </div>
 
 
@@ -55,12 +55,12 @@ GetRace.propTypes = {
 }
 
 const RacesPage = () => {
+    console.log("Entering RacesPage...")
+    console.log(`First Title is: ${rId[0]}...`);
     return (
-        <>
-        <div className="main-page">
-            {rId.map(id => <GetRace raceId={id}/>)}
+        <div key="racePageId" className="main-page">
+            {rId.map((id, index) => <GetRace raceId={id} isEven={index % 2 === 0}/>)}
         </div>
-        </>
     )
 }
 

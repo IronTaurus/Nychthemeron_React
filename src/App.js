@@ -3,7 +3,7 @@ import './App.css';
 import Races from './Races/RacesPage';
 import TopMenu from './Components/TopMenu';
 import Home from './Home/HomePage';
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
 function App() {
 
@@ -28,7 +28,6 @@ function App() {
             </div>
             <div id="right-col"></div>
           </div>
-          <div id="bot-grid"></div>
       </div>       
       </header>
     </div>
