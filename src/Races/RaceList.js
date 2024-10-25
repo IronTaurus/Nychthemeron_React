@@ -15,6 +15,7 @@ const RaceList = [
     "They are mainly miners and thus have a very keen eye to different ores they can see. They generally dislike having elves meddling with "+
     "their creations, sometimes due to the conflict many years ago but mainly because of their disagreement of who is the better craftsman. "+
     "They often include iron in their crafts such as decorative rings of iron in the handle to ward away elves from touching it.",
+    Encumberment: "28 kg",
     Height: "140 cm",
     Age: "400 years"
     },
@@ -40,6 +41,7 @@ const RaceList = [
     "A typical house of a High elf is that of a bright colored wooden house with plenty of decorations that covers most of the house, "+
     "the house would have many large windows to let as much sunlight in as possible with silken drapes to cover them if needed. A typical high elf "+
     "does not enjoy living in cold environments and in harsh sleeping conditions.",
+    Encumberment: "18 kg",
     Height: "180 cm",
     Age: "1200 years"
     },
@@ -63,6 +65,7 @@ const RaceList = [
         "can often feel if anything is wrong with it. To get this bound they must live in the forest for a long time. This also causes them to be a "+
         "bit overprotective towards the forest. They are often wary of other races and dislike any trespass in their forest. Despite this, Wood Elves "+
         "are very reasonable and help people in need regardless of their race as long as their forest stays protected.",
+        Encumberment: "18 kg",
         Height: "170 cm",
         Age: "1800 years"
     },
@@ -86,6 +89,7 @@ const RaceList = [
         "can often feel if anything is wrong with it. To get this bound they must live in the forest for a long time. This also causes them to be a "+
         "bit overprotective towards the forest. They are often wary of other races and dislike any trespass in their forest. Despite this, Wood Elves "+
         "are very reasonable and help people in need regardless of their race as long as their forest stays protected.",
+        Encumberment: "18 kg",
         Height: "170 cm",
         Age: "1800 years"
     },

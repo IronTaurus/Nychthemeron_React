@@ -1,11 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import Races from './Races/RacesPage';
+import {BasicRules, CombatRules} from './Rules/index';
+import {CardGenerator, CombatTracker} from './Tools/index';
+import {Characters, Talents, GameClasses} from './Game/index';
 import TopMenu from './Components/TopMenu';
 import Home from './Home/HomePage';
 import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
 function App() {
+  const routes = [
+    {path: "races", element: <Races/>}, 
+    {path: "basicrules", element: <BasicRules/>}, 
+    {path: "combatrules", element: <CombatRules/>},
+    {path: "cardgen", element: <CardGenerator/>},
+    {path: "combattracker", element: <CombatTracker/>},
+    {path: "characters", element: <Characters/>},
+    {path: "talents", element: <Talents/>},
+    {path: "gameclasses", element: <GameClasses/>},];
 
   return (
     <BrowserRouter>
@@ -22,7 +34,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Outlet />}>
                     <Route index element={<Home />} />
-                    <Route path="races" element={<Races/>}/>
+                    {routes.map(route => <Route path={route.path} element={route.element}/>)};
                   </Route>
                 </Routes>
             </div>
