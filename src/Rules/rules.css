@@ -1,0 +1,24 @@
+.rule-block{
+    margin: 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rule-title{
+    font-size: 0.8em;
+    margin: 0.1em;
+}
+.rule-section{
+    margin: 0.5em;
+}
+.bullet-title{
+    color: aquamarine;
+    font-size: 0.6em;
+}
+.scroll-link{
+    color: rgb(191, 245, 252);
+    text-decoration: none;
+}
+.rule-list{
+    margin: 0.2em;
+}

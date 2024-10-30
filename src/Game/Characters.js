@@ -1,3 +1,5 @@
+import GetMeleeWeapon from "./CharacterSheet/Equippments";
+
 const Characters = ()=> {
     return(
         <>
@@ -5,6 +7,7 @@ const Characters = ()=> {
             <p>A Page explaining character creation and class differences.
                 it also has links to Character sheet/sheets.
             </p>
+            <GetMeleeWeapon/>
         </>
     )
 }
