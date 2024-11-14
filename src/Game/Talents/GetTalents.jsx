@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './Talents.css';
 import TalentList from './TalentList';
 
-function GetSingleTalent({tId}) {
+function GetSingleTalent(tId) {
   const TargetTalent = TalentList.find((talent) => talent.id === tId);
   if(!TargetTalent){return (<p>Cannot Find</p>)}
   return (
@@ -16,6 +16,7 @@ function GetSingleTalent({tId}) {
     </>
   );
 }
+
 GetSingleTalent.propTypes = {
   tId: PropTypes.string.isRequired
 }

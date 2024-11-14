@@ -17,7 +17,7 @@
     width: fit-content;
 }
 .active{
-    border-radius: 25%;
+    border-radius: 50%;
     text-shadow: 0 0 2px #efefef, 0 0 4px #efefef, 0 0 6px #56949f, 0 0 8px #56949f, 0 0 10px #56949f, 0 0 12px #56949f, 0 0 14px #56949f;
 
 }

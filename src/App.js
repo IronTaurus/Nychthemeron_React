@@ -34,7 +34,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Outlet />}>
                     <Route index element={<Home />} />
-                    {routes.map(route => <Route path={route.path} element={route.element}/>)};
+                    {routes.map((route, i) => <Route key={i} path={route.path} element={route.element}/>)};
                   </Route>
                 </Routes>
             </div>
