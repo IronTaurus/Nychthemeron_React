@@ -21,7 +21,7 @@ const RaceList = [
     },
     {id:"Elf_H",
     Title:"High Elf", SubTitle: null, Attributes: [{Type: "Presence", Value: 2}, {Type: "Mind", Value: 1}], 
-    Traits: ["ElvKno", "DayVis1", "MedMem", "IroAll"], Talents: ["QuiRea1", "QuiRea2"], 
+    Traits: ["ElvKno", "DayVis1", "MedMem", "IroAll", "DayCre1"], Talents: ["QuiRea1", "QuiRea2"], 
     Background: "Elves perceive time differently than other races, this is mainly due to their long life span. Similar to how some people won’t "+
     "notice or rather forget when they do some everyday chores an elf will feel the same about the years that pass. This can result in elves being "+
     "very selective about what they remember and it is not uncommon for them to not remember names of people they don’t find worthy of remembering. "+
@@ -71,7 +71,7 @@ const RaceList = [
     },
     {id:"Elf_D",
         Title:"Dark Elf", SubTitle: null, Attributes: [{Type: "Agility", Value: 2}, {Type: "Presence", Value: 1}], 
-        Traits: ["ElvKno", "NigVis1", "MedMem", "IroAll"], Talents: ["QuiRea1", "QuiRea2"], 
+        Traits: ["ElvKno", "NigVis1", "MedMem", "IroAll", "NigCre1"], Talents: ["QuiRea1", "QuiRea2"], 
         Background: "Elves perceive time differently than other races, this is mainly due to their long life span. Similar to how some people won’t "+
         "notice or rather forget when they do some everyday chores an elf will feel the same about the years that pass. This can result in elves being "+
         "very selective about what they remember and it is not uncommon for them to not remember names of people they don’t find worthy of remembering. "+

@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import './Talents.css';
 import TalentList from './TalentList';
 
-function GetSingleTalent(tId) {
-  const TargetTalent = TalentList.find((talent) => talent.id === tId);
+function GetSingleTalent(props) {
+  const TargetTalent = TalentList.find((talent) => talent.id === props.tId);
   if(!TargetTalent){return (<p>Cannot Find</p>)}
   return (
     <>

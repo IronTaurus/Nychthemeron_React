@@ -1,13 +1,14 @@
 
 const ItemEffects = (props) => {
     const discomforts = [
-        {id: "de001", title:"Sleeping Discomforts", effect: "Sleeping with this on gives you half as much recovery of Health and Spirit for a long rest rounded down."},
-        {id: "de002", title:"Slow Equip", effect: "It takes you 30 minutes without aid to put your armor on, with aid this is reduced to 20 minutes."},
+        {id: "sle", title:"Sleeping Discomforts", description: "Sleeping with this on gives you half as much recovery of Health and Spirit for a long rest rounded down."},
+        {id: "slo", title:"Slow Equip", description: "It takes you 30 minutes without aid to put your armor on, with aid this is reduced to 20 minutes."},
     ]
     const damageTypes = [
         {id: "blu", title: "Bludgeon", description: "A blunt strike, great for knocking your enemy unconscious."},
         {id: "sla", title: "Slashing", description: "A wide cut, great for cutting of limbs or leaving your enemy bleeding."},
         {id: "pie", title: "Piercing", description: "A small puncturing attack, great for hitting vital organs."},
+        {id: "mag", title: "Magical", description: "A spell of magical nature."},
         {id: "armp0", title: "Full Armor Piercing", description: "You may ignore armor with attacks from this weapon."},
         {id: "armp2", title: "Armor Piercing 2", description: "You deal damage to an enemy with armor as if it had 2 less in armor. (The ignored armor cannot be reduced by this attack.)"},
         {id: "armp3", title: "Armor Piercing 3", description: "You deal damage to an enemy with armor as if it had 3 less in armor. (The ignored armor cannot be reduced by this attack.)"},
@@ -26,7 +27,6 @@ const ItemEffects = (props) => {
             targetType = discomforts.find((effect) => effect.id === props.effectId);
             break;
     }
-    console.log(`The target is:`, targetType);
 
     return(
         <div className={`effectbox`}>

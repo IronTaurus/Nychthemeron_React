@@ -1,17 +1,41 @@
 .item-block{
+    margin: 0.2em;
     display: flex;
     flex-direction: column;
     background-color: rgb(41, 41, 41);
     border: solid 2px black;
     border-radius: 16px;
     align-items: flex-start;
-    padding: 0.4em;
-    width: fit-content;
+    padding: 0.2em;
+    height: fit-content;
+    align-items: stretch;
+}
+.item-title-row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row-left{
+    display: flex;
+    align-items: center;
+    left: 0%;
+}
+.row-right{
+    display: flex;
+    align-items: center;
+    right: 0%
 }
 .item-title{
-    font-size: 0.8em;
+    width: 18em;
+    overflow-y: hidden;
+    max-height: 1.2em;
+    font-size: 0.5em;
     color: aquamarine;
-    margin: 0.4em;
+    margin: 0em 0.5em 0em 0.5em;
+    background: none;
+    resize: none;
+    border: none;
 }
 .item-flexContainer{
     display: flex;
@@ -23,12 +47,12 @@
 }
 .item-label{
     margin-right: 0.2em;
-    font-size: 0.6em;
+    font-size: 0.4em;
     color: rgb(178, 97, 86);
 }
 .item-text{
     margin: 0.2em;
-    font-size: 0.6em;
+    font-size: 0.4em;
     color: azure;
 }
 .item-list{
@@ -45,7 +69,7 @@
 }
 .effectbox-title{
     padding: 0.1em;
-    font-size: 0.5em;
+    font-size: 0.4em;
     margin: 0%;
 }
 .effectbox-popcontainer{
@@ -60,11 +84,36 @@
     border: solid 2px grey;
     z-index: 1;
     background-color: rgb(31, 31, 31);
-    font-size: 0.6em;
+    font-size: 0.4em;
 }
 .effectbox:hover .effectbox-popcontainer{
     visibility: visible;
 }
 .item-additional-info{
     display: flex;
+    flex-direction: column;
+}
+.expand-icon{
+    height: 0.5em;
+    width: 0.5em;
+    cursor: pointer;
+    margin-right: 0.2em;
+}
+.open-icon{
+    transform: rotate(-90deg);
+    transition: 0.2s;
+}
+.closed-icon{
+    transform: rotate(0deg);
+    transition: 0.2s;
+}
+.item-open{
+    display: none;
+}
+.item-closed{
+    display: flex;
+    flex-direction: column;
+}
+.clickable {
+    cursor: pointer;
 }

@@ -3,10 +3,10 @@ import GetTrait from './Traits'
 import RaceList from './RaceList';
 import PropTypes from 'prop-types';
 
+
 function GetRace({raceId, isEven}) {
     const TargetRace = RaceList.find((race) => race.id === raceId);
     return (
-      <>
       <div className={`race-grid even-is-${isEven}`}>
         <div className={`race-portrait right`}>
                     <img className='race-portrait' src={require(`../Art/RacePortraits/${TargetRace.id}.png`)}/>
@@ -42,9 +42,6 @@ function GetRace({raceId, isEven}) {
             </div>
         </div>
       </div>
-
-
-      </>
     );
 };
 

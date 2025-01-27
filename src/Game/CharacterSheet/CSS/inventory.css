@@ -1,0 +1,53 @@
+.inventory-block{
+    width: 100%;
+    margin: 0.3em;
+    padding: 0.4em;
+}
+.itemlist-parent{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.item-title{
+    margin: 0%;
+}
+.itemlist-title{
+    font-size: 0.5em;
+}
+.itemlist-row{
+    display: flex;
+    height: fit-content;
+}
+.popup-itemlist{
+    width: 3.5em;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(56, 56, 56);
+    padding: 0.2em;
+    border-radius: 0.2em;
+    z-index: 99;
+}
+.child-list{
+    margin-left: 2.5em;
+}
+.parent-list{
+    margin-left: 0.7em;
+    margin-top: 0.2em;
+    width: 2.5em;
+}
+.open-list{
+    display: flex;
+}
+.closed-list{
+    display: none;
+}
+.inventory-list-name{
+    cursor: pointer;
+    font-size: 0.5em;
+}
+.inventory-list-name:hover{
+    text-shadow: 0 0 2px #efefef, 0 0 4px #efefef, 0 0 6px #56949f, 0 0 8px #56949f, 0 0 10px #56949f, 0 0 12px #56949f, 0 0 14px #56949f;
+}
+.list-active{
+    text-shadow: 0 0 2px #efefef, 0 0 4px #efefef, 0 0 6px #56949f, 0 0 8px #56949f, 0 0 10px #56949f, 0 0 12px #56949f, 0 0 14px #56949f;
+}

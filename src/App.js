@@ -17,7 +17,8 @@ function App() {
     {path: "combattracker", element: <CombatTracker/>},
     {path: "characters", element: <Characters/>},
     {path: "talents", element: <Talents/>},
-    {path: "gameclasses", element: <GameClasses/>},];
+    {path: "gameclasses", element: <GameClasses/>},
+  ]
 
   return (
     <BrowserRouter>
